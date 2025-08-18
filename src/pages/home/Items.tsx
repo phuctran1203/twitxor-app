@@ -1,27 +1,13 @@
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Adobe from "../../components/icon/Adobe";
-import { Badge } from "@/components/ui/badge";
 import { MagicCard } from "../../components/magicui/magic-card";
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "../../components/ui/button";
-import { Copy } from "lucide-react";
-import { toast } from "sonner";
-import Microsoft from "../../components/icon/Microsoft";
 import Windows from "../../components/icon/Windows";
 import type { Item } from "@/types/itemType";
 import CardItem from "@/components/CardItem";
 
 const items: Item[] = [
   {
-    title: "Twitxor",
+    title: "Twixtor",
     type: "plugin",
     description:
       "A plugin for adobe to make video smoother when on slow motion by generating more frames between existed frames",
