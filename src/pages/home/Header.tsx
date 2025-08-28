@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className="z-1 flex items-center px-4 sm:px-8 py-2 justify-between border-b backdrop-blur-sm sticky top-0">
       <Logo className="fill-foreground" />
-      <a href="https://fsocial.id.vn" target="_blank">
+      <a href="https://fsocial.id.vn">
         <GitHub className="size-6" />
       </a>
     </div>

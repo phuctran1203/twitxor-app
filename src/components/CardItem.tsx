@@ -36,7 +36,7 @@ export default function CardItem({ item }: { item: Item }) {
         <CardFooter className="my-4 space-x-2">
           <a
             href={item.link}
-            target="_blank"
+            // target="_blank"
             className={cn(buttonVariants({ variant: "default" }))}
           >
             Download
