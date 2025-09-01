@@ -1,8 +1,9 @@
 import type { JSX } from "react";
 
+export type Type = "plugin" | "tool";
 export type Item = {
   title: string;
-  type: string;
+  type: Type;
   description: string;
   image: JSX.Element;
   link: string;

@@ -1,6 +1,6 @@
 import { Toaster } from "sonner";
-import Footer from "./pages/home/Footer";
-import Header from "./pages/home/Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Home from "./pages/home/Home";
 
 function App() {

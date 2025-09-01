@@ -27,8 +27,8 @@ export default function CardItem({ item }: { item: Item }) {
           </CardAction>
         </CardHeader>
 
-        <CardContent>
-          <div className="size-16 mx-auto mb-2">{item.image}</div>
+        <CardContent className="grow">
+          <div className="size-16 mx-auto mb-4">{item.image}</div>
           <CardTitle className="text-2xl mb-1">{item.title}</CardTitle>
           <CardDescription>{item.description}</CardDescription>
         </CardContent>

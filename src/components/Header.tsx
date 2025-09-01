@@ -1,5 +1,5 @@
-import GitHub from "../../components/icon/GitHub";
-import Logo from "../../components/icon/Logo";
+import GitHub from "./icon/GitHub";
+import Logo from "./icon/Logo";
 
 export default function Header() {
   const handleGoTo = () => {};
