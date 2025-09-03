@@ -12,8 +12,9 @@ import {
 } from "./ui/card";
 import { Button, buttonVariants } from "./ui/button";
 import { toast } from "sonner";
-import { Copy } from "lucide-react";
+import { Copy, Download, Link2 } from "lucide-react";
 import type { Item } from "@/types/itemType";
+import { AuroraText } from "./magicui/aurora-text";
 
 export default function CardItem({ item }: { item: Item }) {
   return (
@@ -33,18 +34,31 @@ export default function CardItem({ item }: { item: Item }) {
           <CardDescription>{item.description}</CardDescription>
         </CardContent>
 
-        <CardFooter className="my-4 space-x-2">
+        <CardFooter className="my-4">
           <a
-            href={item.link}
-            // target="_blank"
-            className={cn(buttonVariants({ variant: "default" }))}
+            href={item.link_1}
+            className={cn(
+              buttonVariants({ variant: "default" }),
+              "rounded-r-none border-r border-r-muted border-dashed cursor-pointer"
+            )}
           >
             Download
           </a>
+          <a
+            className={cn(
+              buttonVariants({ variant: "default" }),
+              "rounded-l-none cursor-pointer"
+            )}
+            href={item.link_2}
+          >
+            <Download />
+          </a>
+
           <Button
+            className="ms-auto cursor-pointer"
             variant={"outline"}
             onClick={() => {
-              navigator.clipboard.writeText(item.link);
+              navigator.clipboard.writeText(item.link_1);
 
               toast.success("Link saved into your clipboard");
             }}

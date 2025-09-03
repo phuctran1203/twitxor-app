@@ -14,7 +14,9 @@ const itemsData: Item[] = [
     description:
       "A plugin for adobe to make video smoother when on slow motion by generating more frames between existed frames",
     image: <Adobe className="size-full" />,
-    link: "https://frdl.io/vsgc1b97m4dj/Twixtor.rar",
+    link_1: "https://frdl.io/vsgc1b97m4dj/Twixtor.rar",
+    link_2:
+      "https://linkyshare.com/en/@phuctrannumber2/free-twixtor-plugin-for-adobe",
   },
   {
     title: "Scrcpy",
@@ -22,7 +24,8 @@ const itemsData: Item[] = [
     description:
       "Scrcpy is a fast and free tool to mirror your Android phone screen to your computer via USB connection",
     image: <Windows className="size-full" />,
-    link: "https://frdl.io/q2lr6uccw7ec/scrcpy.zip",
+    link_1: "https://frdl.io/q2lr6uccw7ec/scrcpy.zip",
+    link_2: "",
   },
   {
     title: "Silence Remover",
@@ -30,7 +33,8 @@ const itemsData: Item[] = [
     description:
       "An automatic timeline-cutting tool for Adobe Premiere that detects and removes silent gaps to streamline video editing.",
     image: <Adobe className="size-full" />,
-    link: "https://frdl.io/my7n82gkctf8/Silence+Remover_V1.2.zip",
+    link_1: "https://frdl.io/my7n82gkctf8/Silence+Remover_V1.2.zip",
+    link_2: "",
   },
 ];
 

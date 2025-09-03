@@ -6,5 +6,6 @@ export type Item = {
   type: Type;
   description: string;
   image: JSX.Element;
-  link: string;
+  link_1: string;
+  link_2: string;
 };
