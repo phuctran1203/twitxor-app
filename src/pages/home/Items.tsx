@@ -2,10 +2,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import Adobe from "../../components/icon/Adobe";
 import { MagicCard } from "../../components/magicui/magic-card";
 import Windows from "../../components/icon/Windows";
-import type { Item, Type } from "@/types/itemType";
 import CardItem from "@/components/CardItem";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, type JSX } from "react";
 import DropdownButton from "@/components/dropdown-button";
+
+export type Type = "plugin" | "tool";
+export type Item = {
+  title: string;
+  type: Type;
+  description: string;
+  image: JSX.Element;
+  link_1: string;
+  video?: string;
+};
 
 const itemsData: Item[] = [
   {
@@ -16,7 +25,8 @@ const itemsData: Item[] = [
     image: <Adobe className="size-full" />,
     link_1:
       "https://linkyshare.com/en/@phuctrannumber2/free-twixtor-plugin-for-adobe",
-    link_2: "",
+
+    video: "https://cdn.loadvid.com/videos/play/iu1h7zvjf7IK9Dwz2WJG",
   },
   {
     title: "Scrcpy",
@@ -26,7 +36,6 @@ const itemsData: Item[] = [
     image: <Windows className="size-full" />,
     link_1:
       "https://linkyshare.com/en/@phuctrannumber2/scrcpy-stream-real-time-mobile-screen-to-pc",
-    link_2: "",
   },
   {
     title: "Silence Remover",
@@ -36,7 +45,6 @@ const itemsData: Item[] = [
     image: <Adobe className="size-full" />,
     link_1:
       "https://linkyshare.com/en/@phuctrannumber2/silence-remover-auto-remove-and-cut-video-in-adobe-premirere",
-    link_2: "",
   },
 ];
 

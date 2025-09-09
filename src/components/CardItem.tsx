@@ -12,9 +12,9 @@ import {
 } from "./ui/card";
 import { Button, buttonVariants } from "./ui/button";
 import { toast } from "sonner";
-import { Copy, Download, Link2 } from "lucide-react";
-import type { Item } from "@/types/itemType";
+import { Copy, Download, Link2, Video } from "lucide-react";
 import { AuroraText } from "./magicui/aurora-text";
+import type { Item } from "@/pages/home/Items";
 
 export default function CardItem({ item }: { item: Item }) {
   return (
@@ -49,9 +49,9 @@ export default function CardItem({ item }: { item: Item }) {
               buttonVariants({ variant: "default" }),
               "rounded-l-none cursor-pointer"
             )}
-            href={item.link_2}
+            href={item.video}
           >
-            <Download />
+            <Video />
           </a>
 
           <Button
